@@ -19,6 +19,7 @@ function MoviesItem(props) {
       setShowMenu(true);
     }
   };
+
   return (
     <>
       {showMenu && <Screen onClick={menuHandler} />}
