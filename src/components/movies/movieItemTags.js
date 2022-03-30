@@ -8,7 +8,7 @@ const Screen = styled.div`
   top: 0;
   right: 0;
   background-color: blue;
-  opacity: 0.05;
+  opacity: 0.02;
 `;
 
 const Dots = styled.div`
@@ -60,38 +60,48 @@ const Detail = styled.div`
   div.vote {
     position: absolute;
     display: inline-block;
-    background-color: green;
     width: 38px;
     height: 38px;
     border-radius:50%
     padding: 2px;
     top:-30px;
     text-align: center;
+    background-image: ${(props) => {
+      if (props.vote >= 7) {
+        return `conic-gradient(#61d17a 0deg, #61d17a ${
+          props.vote * 36
+        }deg, #204529 ${props.vote * 36}deg)`;
+      }
+      return `conic-gradient(#d2d533 0deg, #d2d533 ${
+        props.vote * 36
+      }deg, #423d0f ${props.vote * 36}deg)`;
+    }};
     @media (max-width: 769px) {
       display: none;
     }
     .voteInter {
       background-color: #081c22;
       border-radius:50%
-      width: 95%;
-      height: 95%;
+      width: 96%;
+      height: 96%;
       margin: auto auto
       display: flex;
       align-items: center;
       justify-content: center;
     }
     p.vote{
+      font-size:12px;
       color: #ffffff;
       padding:0;
-      width:70%
+      width:60%
     }
     p.percent {
-      font-size:8px;
+      font-size:7px;
       color: #ffffff;
       padding:0;
       width:20%
-      margin-left:-1px
-      padding-bottom:3px;
+      margin-left:-3px
+      padding-bottom:6px;
     }
   }
   p.overview {

@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Modal = styled(Card)`
   position: absolute;
-  z-index: 10;
+  z-index: 11;
   width: fit-content;
   font-size: 1em;
   margin-top: 60px;

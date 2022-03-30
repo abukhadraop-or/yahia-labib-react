@@ -7,7 +7,7 @@ import noPic from "../../assets/pics/nopic.svg";
 import Menu from "../others/Menu";
 
 function MoviesItem(props) {
-  const { title, overview, image, date, vote, length } = props;
+  const { title, overview, image, date, vote } = props;
   const [showMenu, setShowMenu] = useState(false);
   /**
    * Handling the list on the top of movie card.
@@ -21,7 +21,7 @@ function MoviesItem(props) {
   };
   return (
     <>
-      {showMenu && <Screen length={length} onClick={menuHandler} />}
+      {showMenu && <Screen onClick={menuHandler} />}
       {showMenu && <Menu />}
       <Card flex relative>
         {showMenu && <Backdrop />}
@@ -38,15 +38,21 @@ function MoviesItem(props) {
         <Dots onClick={menuHandler}>
           <img src={dots} alt="dots" />
         </Dots>
-        <Detail>
+        <Detail vote={vote}>
           <div>
             <h3>{title}</h3>
             <p>{date}</p>
           </div>
           <div className="vote">
             <div className="voteInter">
-              <p className="vote">{vote * 10}</p>
-              <p className="percent">%</p>
+              {vote ? (
+                <>
+                  <p className="vote">{vote * 10}</p>
+                  <p className="percent">%</p>
+                </>
+              ) : (
+                <p className="vote">NR</p>
+              )}
             </div>
           </div>
           <p className="overview">{overview}</p>
@@ -56,7 +62,6 @@ function MoviesItem(props) {
   );
 }
 MoviesItem.defaultProps = {
-  length: 20,
   title: "",
   overview: "",
   image: "",
@@ -64,7 +69,6 @@ MoviesItem.defaultProps = {
   vote: 0,
 };
 MoviesItem.propTypes = {
-  length: PropTypes.number,
   title: PropTypes.string,
   overview: PropTypes.string,
   image: PropTypes.string,

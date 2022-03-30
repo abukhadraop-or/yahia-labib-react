@@ -4,10 +4,11 @@ import MovieContext from "../../context/moviesContext";
 import search from "../../assets/pics/search.svg";
 
 const Form = styled.form`
-  width: 88%;
+  padding: 1px 20px;
   margin: 0 auto;
   display: flex;
   align-content: center;
+  max-width: 1440px;
   .img {
     width: 22.4px;
     filter: grayscale(100%)  brightness(-100%);

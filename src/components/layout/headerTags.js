@@ -3,6 +3,7 @@ import List from "../UI/List";
 
 const Header = styled.header`
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   background-color: #032541;
@@ -20,6 +21,16 @@ const Header = styled.header`
     }
   }
 `;
+const Screen = styled.div`
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  opacity: 0.02;
+`;
 
 const Container = styled(List)`
   display: none;
@@ -35,6 +46,7 @@ const Container = styled(List)`
     width: 154px;
     height: 20px;
   }
+
   ul li {
     color: #fff;
     padding: 0.5rem 0.5rem;
@@ -156,4 +168,4 @@ const Menu = styled.div`
   }
 `;
 
-export { Header, Container, ListMobile, Menu };
+export { Screen, Header, Container, ListMobile, Menu };
