@@ -1,15 +1,26 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const translating = keyframes`
+  from {
+    top:0;
+  }
+
+  to {
+    display:fixed;
+    top:-65px;
+  }
+`;
 
 const Header = styled.header`
   align-items: center;
-  animation: top-e 0.2s linear;
+  animation: ${translating} 0.3s linear forwards;
   background-color: #032541;
   display: flex;
   height: 4rem;
   justify-content: center;
   position: relative;
   width: 100%;
-  z-index: 10;
+  z-index: 8;
 
   @media (min-width: 769px) {
     .mobile {

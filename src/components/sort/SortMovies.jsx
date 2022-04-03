@@ -36,12 +36,13 @@ function SortMovies() {
   };
   /**
    * Handle the click on "load more" button.
-   * 
+   *
    * @param {React.SyntheticEvent} event Event data.
    */
   const onSearch = (event) => {
     event.preventDefault();
     SortMoviesHandler(selectRef.current.value, 1);
+    setColor(false)
   };
   return (
     <Bars>
