@@ -23,12 +23,12 @@ import Menu from 'components/Menu/Menu';
 /**
  * Handling the card section for each movie.
  *
- * @param {Object} props
- * @param {string} props.title movie title
- * @param {string} props.overview movie overview
- * @param {string} props.image movie image url
- * @param {string} props.date movie released date
- * @param {number} props.vote movie average vote
+ * @param {Object} props props.
+ * @param {string} props.title movie title.
+ * @param {string} props.overview movie overview.
+ * @param {string} props.image movie image url.
+ * @param {string} props.date movie released date.
+ * @param {number} props.vote movie average vote.
  *
  * @return {JSX.element}
  */

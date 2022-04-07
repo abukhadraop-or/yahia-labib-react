@@ -19,7 +19,7 @@ import x from 'assets/pics/x.svg';
  * Handling the Mobile Header.
  *
  * @param {Object} props
- * @param {function} props.showMenu the function that control appearing of mobile left menu.
+ * @param {function} props.showMenu The function that control appearing of mobile left menu.
  *
  * @return {JSX.element}
  */

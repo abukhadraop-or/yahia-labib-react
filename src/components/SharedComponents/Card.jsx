@@ -34,7 +34,7 @@ const CardS = styled.div`
 /**
  * Handling the reuseable Card.
  *
- * @param {Object} props
+ * @param {Object} props props.
  * @param {boolean} props.relative if true the Card is relative.
  * @param {boolean} props.flex if true the Card is flex.
  * @param {element} props.children contains the elements inside the card.

@@ -8,7 +8,7 @@ import Header from 'components/Header/MainHeader/header.style';
  * Handling the which header appear.
  *
  * @param {Object} props
- * @param {function} props.showMenu the function that control the appearing of mobile left menu.
+ * @param {function} props.showMenu The function that control the appearing of mobile left menu.
  *
  * @return {JSX.element}
  */

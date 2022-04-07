@@ -30,9 +30,9 @@ function DesktopHeader() {
   const ctx = useContext(MovieContext);
 
   /**
-   * determine which header modals should be open.
+   * Determine which header modals should be open.
    *
-   * @param {string} list a string to determine which item the user hovered over.
+   * @param {string} list A string to determine which item the user hovered over.
    */
   const openMenu = (list) => {
     setShowMenu(true);

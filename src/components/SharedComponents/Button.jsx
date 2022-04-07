@@ -12,7 +12,7 @@ const SearchButton = styled.button`
   display: inline-flex;
   font-size: 1.4em;
   font-weight: 600;
-  height: 3.125;
+  height: 3.125rem;
   justify-content: center;
   line-height: 1em;
   padding: 0.875rem 1rem 1rem 1rem;
@@ -36,7 +36,7 @@ const SearchButton = styled.button`
 /**
  * Handling the reuseable Button.
  *
- * @param {Object} props
+ * @param {Object} props props.
  * @param {String} props.changeColor contains the color of the button.
  * @param {String} props.rad contains the border radius of the button.
  * @param {String} props.children contains the texts inside the button.

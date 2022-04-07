@@ -33,7 +33,7 @@ const ModalStyle = styled.div`
 /**
  * Handling the reuseable Modal.
  *
- * @param {Object} props
+ * @param {Object} props props.
  * @param {boolean} props.header if true the modal is for header menu.
  * @param {String} props.display control the type of display.
  * @param {Element} props.children the elements inside the Modal.
