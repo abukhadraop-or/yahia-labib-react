@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { MovieContextProvider } from './context/moviesContext';
+import { MovieContextProvider } from './context/MoviesContext';
 
 ReactDOM.render(
   <MovieContextProvider>
@@ -9,7 +9,3 @@ ReactDOM.render(
   </MovieContextProvider>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

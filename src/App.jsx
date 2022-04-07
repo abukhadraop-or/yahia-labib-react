@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import MainNavigation from 'components/header/mainHeader/MainNavigation';
-import Footer from 'components/footer/Footer';
-import MoviesList from 'components/movieList/MoviesList';
-import SortMovies from 'components/sort/SortMovies';
-import SearchInput from 'components/search/SearchInput';
-import MenuMobile from 'components/mobile-menu/MenuMobile';
+import MainNavigation from 'components/Header/MainHeader/MainNavigation';
+import Footer from 'components/Footer/Footer';
+import MoviesList from 'components/MovieList/MoviesList';
+import SortMovies from 'components/Sort/SortMovies';
+import SearchInput from 'components/Search/SearchInput';
+import MenuMobile from 'components/MobileMenu/MenuMobile';
 import GlobalStyle from 'globalStyles';
 
 const Main = styled.main`
