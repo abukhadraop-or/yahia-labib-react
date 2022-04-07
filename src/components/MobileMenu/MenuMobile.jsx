@@ -46,6 +46,8 @@ export default function MenuMobile() {
   /**
    * Handling the data should render.
    *
+   * @param {Array} data Contains the texts of the lists.
+   *
    * @return {JSX.element}
    */
   const getList = (data) => data.map((item) => <Li key={item}>{item}</Li>);

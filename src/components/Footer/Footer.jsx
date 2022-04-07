@@ -22,6 +22,8 @@ function Footer() {
   /**
    * Handling the data should render.
    *
+   * @param {Array} data Contains the texts of the footer list.
+   *
    * @return {JSX.element}
    */
   const getList = (data) => (

@@ -6,7 +6,7 @@ import MoviesList from 'components/MovieList/MoviesList';
 import SortMovies from 'components/Sort/SortMovies';
 import SearchInput from 'components/Search/SearchInput';
 import MenuMobile from 'components/MobileMenu/MenuMobile';
-import GlobalStyle from 'globalStyles';
+import GlobalStyle from 'global-styles';
 
 const Main = styled.main`
   padding: 20px;
