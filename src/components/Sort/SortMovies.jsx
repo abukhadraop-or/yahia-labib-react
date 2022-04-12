@@ -20,7 +20,7 @@ import arrow from 'assets/pics/arrow.svg';
  */
 function SortMovies() {
   const ctx = useContext(MovieContext);
-  const [searchColor, setColor] = useState(false);
+  const [searchColor, setColor] = React.useState(false);
   const selectRef = useRef();
   const [showSort, setShowSort] = useState(false);
   const { SortMoviesHandler } = ctx;
@@ -61,6 +61,7 @@ function SortMovies() {
 
             <Select
               defaultValue="popularity.desc"
+              data-testid="select"
               id="sort_by"
               name="sort"
               ref={selectRef}
@@ -84,7 +85,7 @@ function SortMovies() {
       </Card>
       <Button
         changeColor={searchColor ? 'Blue' : ''}
-        onClick={searchColor ? onSearch : undefined}
+        onClick={onSearch}
       >
         Search
       </Button>

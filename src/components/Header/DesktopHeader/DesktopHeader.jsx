@@ -17,6 +17,8 @@ import x from 'assets/pics/x.svg';
 import plus from 'assets/pics/plus.svg';
 import { data } from 'assets/data/data';
 
+const dataDeterminer = { m: 0, mo: 3, p: 2, t: 1 };
+
 /**
  * Handling the Desktop Header.
  *
@@ -36,28 +38,12 @@ function DesktopHeader() {
    */
   const openMenu = (list) => {
     setShowMenu(true);
-    switch (list) {
-      case 'm':
-        setDataMenu(data[0]);
-        setTop(0);
-        break;
-      case 't':
-        setDataMenu(data[1]);
-        setTop(1);
-        break;
-      case 'p':
-        setDataMenu(data[2]);
-        setTop(2);
-        break;
-      case 'mo':
-        setDataMenu(data[3]);
-        setTop(3);
-        break;
-      case 'c':
-        setShowMenu(false);
-        break;
-      default:
-        break;
+    const chosenData = data[dataDeterminer[list]];
+    if (list !== 'c') {
+      setDataMenu(chosenData);
+      setTop(dataDeterminer[list]);
+    } else {
+      setShowMenu(false);
     }
   };
 

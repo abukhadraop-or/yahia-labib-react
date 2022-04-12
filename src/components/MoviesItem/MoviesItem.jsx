@@ -74,7 +74,7 @@ function MoviesItem({ title, overview, image, date, vote }) {
           </Dots>
           <Detail vote={vote}>
             <div>
-              <MovieTitle>{title}</MovieTitle>
+              <MovieTitle data-testid="title">{title}</MovieTitle>
               <Para>{date}</Para>
             </div>
             <Vote vote={vote}>
@@ -89,7 +89,7 @@ function MoviesItem({ title, overview, image, date, vote }) {
                 )}
               </VoteInter>
             </Vote>
-            <Overview>{overview}</Overview>
+            <Overview data-testid="overview">{overview}</Overview>
           </Detail>
         </>
       </Card>
