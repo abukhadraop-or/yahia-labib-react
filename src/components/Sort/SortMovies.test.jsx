@@ -19,9 +19,4 @@ describe('SortMovies', () => {
     expect(selectElement).toBeVisible();
     expect(headElement).toBeVisible();
   });
-  test('should send', () => {
-    render(<SortMovies />);
-    const headingElement = screen.getByText('Sort');
-    expect(headingElement).toBeInTheDocument();
-  });
 });

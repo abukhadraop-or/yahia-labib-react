@@ -17,6 +17,6 @@ describe('MoviesList', () => {
       </MovieContextProvider>
     );
     const elements = await screen.findAllByRole('listitem');
-    expect(elements.length).not.toBe(0);
+    expect(elements.length).toBe(3);
   });
 });
